@@ -1,0 +1,122 @@
+//Body
+body{
+  font-family: $mainFont;
+}
+
+// Container
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+@media (min-width: $tableWidth) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: $smDesktopWidth) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: $desktopWidth) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+//Buttons
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &-link{
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  &-block{
+    display: block;
+    width: 100%;
+  }
+  &-sm{
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem;
+    margin-right: 0.2rem;
+  }
+
+  //Button Colors
+  &-primary{
+    background: $primary-color;
+    color: #fff;
+  }
+  &-light{
+    background: $light-color;
+    color: #333;
+  }
+  &-dark{
+    background: $dark-color;
+    color: #fff;
+  }
+  &-danger{
+    background:$danger-color;
+    color: #fff;
+  }
+  &-success{
+    background: $success-color;
+    color: #fff;
+  }
+  &-white{
+    background: #fff;
+    color: #333;
+    border: #ccc solid 1px;
+  }
+}
+
+/* Paddings */
+.p {
+  padding: 0.5rem;
+
+  &-1{padding: 1rem;}
+  &-2{padding: 2rem;}
+  &-3{padding: 3rem;}
+  &y{padding: 0.5rem 0;}
+  &y-1{padding: 1rem 0;}
+  &y-2{padding: 2rem 0;}
+  &y-3{padding: 3rem 0;}
+}
+
+/* Margins */
+.m {
+  margin: 0.5rem;
+
+  &-1{margin: 1rem;}
+  &-2{margin: 2rem;}
+  &-3{margin: 3rem;}
+  &y{margin: 0.5rem 0;}
+  &y-1{margin: 1rem 0;}
+  &y-2{margin: 2rem 0;}
+  &y-3{margin: 3rem 0;}
+}
+
+//Text
+.text-center{
+  text-align: center;
+}
+
+
+
+
+

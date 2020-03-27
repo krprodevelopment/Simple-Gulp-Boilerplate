@@ -1,0 +1,12 @@
+// Reset
+@import "utils/reset";
+// Variables
+@import "utils/vars";
+// Boilerplate Styles
+@import "utils/base";
+
+
+// Styles
+@import "blocks/header";
+@import "blocks/content";
+@import "blocks/footer";
